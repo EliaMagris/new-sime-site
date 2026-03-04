@@ -30,11 +30,10 @@ function Hero({ stats }) {
       <div className="hero-card">
         <div className="hero-image" />
         <div className="hero-card-content">
-          <h3>Palette ispirate alla natura</h3>
-          <p>
+          <h4>
             Tonalita calde, neutri sofisticati e tocchi decisi per ambienti
             che parlano di te.
-          </p>
+          </h4>
         </div>
       </div>
     </section>

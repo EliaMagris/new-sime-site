@@ -24,24 +24,6 @@ function App() {
 
   const galleryImages = images1.concat(images2)
 
-  const services = [
-    {
-      title: 'Decorazioni d\'interni',
-      description:
-        'Effetti materici, spatolati, marmorini e finiture che trasformano ogni ambiente.',
-    },
-    {
-      title: 'Restyling facciate',
-      description:
-        'Soluzioni resistenti e di design per esterni, con palette cromatiche su misura.',
-    },
-    {
-      title: 'Texture personalizzate',
-      description:
-        'Campioni e prove colore dedicati per trovare la combinazione perfetta.',
-    },
-  ]
-
   const processSteps = [
     {
       title: 'Sopralluogo',
@@ -49,7 +31,7 @@ function App() {
     },
     {
       title: 'Proposta creativa',
-      description: 'Moodboard, palette colore e rendering delle finiture.',
+      description: 'Palette colore e rendering delle finiture.',
     },
     {
       title: 'Applicazione',
@@ -58,8 +40,9 @@ function App() {
   ]
 
   const stats = [
-    { label: 'lavori completati', value: '320+' },
     { label: 'Anni di esperienza', value: '30+' },
+    { label: 'Lavori completati', value: '2000+' },
+    { label: 'Clienti stabili', value: '300+' },
   ]
 
   const handleSubmit = async (event) => {
@@ -94,7 +77,7 @@ function App() {
       <main>
         <Hero stats={stats} />
 
-        <ServicesSection services={services} />
+        <ServicesSection />
 
         <ProcessSection processSteps={processSteps} />
 
