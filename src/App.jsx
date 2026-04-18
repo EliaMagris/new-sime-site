@@ -6,7 +6,7 @@ import Topbar from './components/Topbar'
 import Hero from './components/Hero'
 import ServicesSection from './components/ServicesSection'
 import ProcessSection from './components/ProcessSection'
-import GallerySection from './components/GallerySection'
+import HowWeWorkSection from './components/HowWeWorkSection'
 import ContactSection from './components/ContactSection'
 
 function App() {
@@ -16,13 +16,14 @@ function App() {
     message: '',
   })
 
-  const imagesContext1 = import.meta.glob('./img/foto-1/*.{png,jpg,jpeg,svg}', { eager: true })
-  const imagesContext2 = import.meta.glob('./img/foto-2/*.{png,jpg,jpeg,svg}', { eager: true })
+  /** Immagini “Come lavoriamo”: cartelle dedicate (solo aggiungere/rimuovere file, nomi ordinati 1,2,3…) */
+  const imagesEsterni = import.meta.glob('./img/lavori-esterni/*.{png,jpg,jpeg,svg}', { eager: true })
+  const imagesInterni = import.meta.glob('./img/lavori-interni/*.{png,jpg,jpeg,svg}', { eager: true })
 
-  const images1 = Object.values(imagesContext1).map((image) => image.default)
-  const images2 = Object.values(imagesContext2).map((image) => image.default)
-
-  const galleryImages = images1.concat(images2)
+  const sortImageModules = (ctx) =>
+    Object.keys(ctx)
+      .sort((a, b) => a.localeCompare(b, undefined, { sensitivity: 'base', numeric: true }))
+      .map((key) => ctx[key].default)
 
   const processSteps = [
     {
@@ -44,6 +45,31 @@ function App() {
     { label: 'Lavori completati', value: '2000+' },
     { label: 'Clienti stabili', value: '300+' },
   ]
+
+  const workShowcaseDefs = [
+    {
+      title: 'Ristrutturazione esterni',
+      subtitle: 'prima e dopo',
+      images: sortImageModules(imagesEsterni),
+    },
+    {
+      title: 'Ristrutturazione interni',
+      subtitle: 'prima e dopo',
+      images: sortImageModules(imagesInterni),
+    },
+  ]
+
+  const workShowcases = workShowcaseDefs
+    .map((def, index) => {
+      if (!def.images?.length) return null
+      const { images, ...rest } = def
+      return {
+        key: `showcase-${index}-${rest.title}`,
+        ...rest,
+        images,
+      }
+    })
+    .filter(Boolean)
 
   const handleSubmit = async (event) => {
     event.preventDefault()
@@ -81,7 +107,7 @@ function App() {
 
         <ProcessSection processSteps={processSteps} />
 
-        <GallerySection galleryImages={galleryImages} />
+        <HowWeWorkSection showcases={workShowcases} />
 
         <ContactSection
           formRef={formRef}

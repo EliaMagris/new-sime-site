@@ -14,8 +14,8 @@ function Hero({ stats }) {
           <a className="btn btn-primary" href="#contatti">
             Prenota una consulenza
           </a>
-          <a className="btn btn-ghost" href="#gallery">
-            Guarda la gallery
+          <a className="btn btn-ghost" href="#how-we-work">
+            Guarda i prima e dopo
           </a>
         </div>
         <div className="stats">
