@@ -16,6 +16,7 @@ function ContactSection({ formRef, formStatus, onSubmit }) {
           <p>Decorazioni interne ed esterne con finiture artistiche.</p>
           <div className="contact-details">
             <span>+39 335 613 2110</span>
+            <span>+39 389 947 4164</span>
             <span>indacodecori@gmail.com</span>
             <span>Pordenone e provincia</span>
             <div className="contact-phone-actions">
@@ -69,16 +70,6 @@ function ContactSection({ formRef, formStatus, onSubmit }) {
               type="tel"
               name="user_phone"
               placeholder="+39 000 0000000"
-              required
-            />
-          </label>
-          <label>
-            Provincia
-            <input
-              type="text"
-              name="user_province"
-              placeholder="Es. PN, TV, VE"
-              autoComplete="address-level1"
               required
             />
           </label>

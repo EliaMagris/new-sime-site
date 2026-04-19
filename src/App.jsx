@@ -43,18 +43,44 @@ function App() {
   const stats = [
     { label: 'Anni di esperienza', value: '30+' },
     { label: 'Lavori completati', value: '2000+' },
-    { label: 'Clienti stabili', value: '300+' },
+    { label: 'Clienti stabili', value: '200+' },
   ]
 
   const workShowcaseDefs = [
     {
-      title: 'Ristrutturazione esterni',
-      subtitle: 'prima e dopo',
+      title: 'Sistemi in Cartongesso e Isolamento Termico interno',
       images: sortImageModules(imagesEsterni),
     },
     {
-      title: 'Ristrutturazione interni',
-      subtitle: 'prima e dopo',
+      title: 'Risanamento Pareti e Trattamenti Antimuffa',
+      images: sortImageModules(imagesInterni),
+    },
+    {
+      title: 'Tinteggiature Professionali e Verniciature',
+      images: sortImageModules(imagesInterni),
+    },
+    {
+      title: 'Decorazioni Materiche e Finiture di Pregio',
+      images: sortImageModules(imagesInterni),
+    },
+    {
+      title: 'Posa Carta da Parati e Rivestimenti Murali',
+      images: sortImageModules(imagesInterni),
+    },
+    {
+      title: 'Trattamento Legno per Interni ed Esterni',
+      images: sortImageModules(imagesInterni),
+    },
+    {
+      title: 'Isolamento Termico a Cappotto',
+      images: sortImageModules(imagesInterni),
+    },
+    {
+      title: 'Rivestimenti a Spessore e Finiture Decorative da Esterno',
+      images: sortImageModules(imagesInterni),
+    },
+    {
+      title: 'Rifacimento Facciate e Pitture in Autopulente',
       images: sortImageModules(imagesInterni),
     },
   ]

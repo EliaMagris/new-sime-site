@@ -3,7 +3,7 @@ function ProcessSection({ processSteps }) {
     <section className="section split" id="processo" style={{ scrollMarginTop: '100px' }}>
       <div>
         <p className="eyebrow">Metodo</p>
-        <h2>Un percorso chiaro, dall' idea alla realizzazione.</h2>
+        <h2>Un percorso chiaro, dall'idea alla realizzazione.</h2>
         <p>
           Ogni progetto parte da un ascolto attento delle esigenze e si
           conclude con un risultato che valorizza l'architettura.

@@ -117,7 +117,7 @@ function ServicesSection() {
           <h2>Interventi esterni duraturi e sicuri.</h2>
           <p>
             Ci occupiamo di facciate, cappotti termici e finiture decorative per esterni, con
-            materiali certificati e tecniche applicative che garantiscono prestazioni e bellezza nel
+            materiali certificati e tecniche applicative che garantiscono prestazioni e qualità nel
             tempo.
           </p>
         </div>

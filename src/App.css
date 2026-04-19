@@ -813,9 +813,9 @@
 }
 
 .work-showcase-title {
-  font-size: clamp(1.35rem, 2.2vw, 1.75rem);
+  font-size: clamp(1.225rem, 2vw, 1.625rem);
   font-weight: 700;
-  color: var(--logo-red-light);
+  color: #fff;
   letter-spacing: -0.02em;
   margin: 0;
 }
@@ -828,10 +828,7 @@
 }
 
 .work-showcase-rule {
-  width: 3rem;
-  height: 1px;
-  margin-top: 1.15rem;
-  background: var(--border-strong);
+  display: none;
 }
 
 .work-showcase-gallery {
