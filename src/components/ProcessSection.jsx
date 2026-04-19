@@ -23,7 +23,7 @@ function ProcessSection({ processSteps }) {
       <div className="quote-card">
         <h3>Consulenza creativa dedicata</h3>
         <p>
-          Ci avvaliamo di studi di architettura, interior designer per creare soluzioni e campioni personalizzati.
+          Ci avvaliamo di studi di architettura ed interior designer per creare soluzioni e campioni personalizzati.
         </p>
         <ul>
           <li>Analisi tecnica dei supporti</li>

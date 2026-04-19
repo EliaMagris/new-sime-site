@@ -41,46 +41,26 @@ function App() {
   ]
 
   const stats = [
-    { label: 'Anni di esperienza', value: '30+' },
+    { label: 'Anni di esperienza', value: '35+' },
     { label: 'Lavori completati', value: '2000+' },
     { label: 'Clienti stabili', value: '200+' },
   ]
 
   const workShowcaseDefs = [
     {
-      title: 'Sistemi in Cartongesso e Isolamento Termico interno',
+      title: 'Cartongessi e pitture interne',
       images: sortImageModules(imagesEsterni),
     },
     {
-      title: 'Risanamento Pareti e Trattamenti Antimuffa',
+      title: 'Carte da parati e decorazioni murali',
       images: sortImageModules(imagesInterni),
     },
     {
-      title: 'Tinteggiature Professionali e Verniciature',
+      title: 'Sistemi a cappotto, rivestimenti e pitture esterne',
       images: sortImageModules(imagesInterni),
     },
     {
-      title: 'Decorazioni Materiche e Finiture di Pregio',
-      images: sortImageModules(imagesInterni),
-    },
-    {
-      title: 'Posa Carta da Parati e Rivestimenti Murali',
-      images: sortImageModules(imagesInterni),
-    },
-    {
-      title: 'Trattamento Legno per Interni ed Esterni',
-      images: sortImageModules(imagesInterni),
-    },
-    {
-      title: 'Isolamento Termico a Cappotto',
-      images: sortImageModules(imagesInterni),
-    },
-    {
-      title: 'Rivestimenti a Spessore e Finiture Decorative da Esterno',
-      images: sortImageModules(imagesInterni),
-    },
-    {
-      title: 'Rifacimento Facciate e Pitture in Autopulente',
+      title: 'Prima, durante e dopo',
       images: sortImageModules(imagesInterni),
     },
   ]

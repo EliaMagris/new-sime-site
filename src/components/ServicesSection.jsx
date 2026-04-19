@@ -7,7 +7,7 @@ function ServicesSection() {
     {
       title: 'Sistemi in Cartongesso e Isolamento Termico interno',
       description:
-        'Progettiamo soluzioni in cartongesso per ridisegnare gli spazi: velette con LED integrati, pareti divisorie acustiche e interventi mirati di isolamento termico interno (cappotto) per migliorare l’efficienza energetica.',
+        'Progettiamo soluzioni in cartongesso per ridisegnare gli spazi: velette con LED integrati, pareti divisorie acustiche e interventi mirati di isolamento termico interno per migliorare l’efficienza energetica.',
     },
     {
       title: 'Risanamento Pareti e Trattamenti Antimuffa',
@@ -45,7 +45,7 @@ function ServicesSection() {
     {
       title: 'Rivestimenti a Spessore e Finiture Decorative da Esterno',
       description:
-        'Applichiamo rivestimenti a spessore e finiture materiche per esterni che garantiscono uniformità cromatica, estetica moderna e una resistenza agli urti superiore alle normali pitture.',
+        'Applichiamo rivestimenti a spessore e finiture materiche per esterni garantendo uniformità cromatica ed estetica moderna',
     },
     {
       title: 'Rifacimento Facciate e Pitture in Autopulente',
