@@ -5,6 +5,16 @@ function ServicesSection() {
 
   const internalServices = [
     {
+      title: 'Sistemi in Cartongesso e Isolamento Termico interno',
+      description:
+        'Progettiamo soluzioni in cartongesso per ridisegnare gli spazi: velette con LED integrati, pareti divisorie acustiche e interventi mirati di isolamento termico interno (cappotto) per migliorare l’efficienza energetica.',
+    },
+    {
+      title: 'Risanamento Pareti e Trattamenti Antimuffa',
+      description:
+        'Interveniamo su pareti ammalorate da umidità e muffe con cicli di risanamento certificati, garantendo ambienti sani e finiture durature per abitazioni private ed uffici.',
+    },
+    {
       title: 'Tinteggiature Professionali e Verniciature',
       description:
         'Realizziamo tinteggiature per interni ed esterni con prodotti di alta gamma, traspiranti ed eco-compatibili all’acqua. Dall\'appartamento privato al condominio, garantiamo una copertura perfetta, massima pulizia del cantiere e una consulenza cromatica personalizzata.',
@@ -15,34 +25,19 @@ function ServicesSection() {
         'Trasformiamo le tue pareti in opere d’arte con tecniche decorative moderne: dal perlescente agli effetti materici contemporanei.',
     },
     {
-      title: 'Sistemi in Cartongesso e Isolamento Termico',
-      description:
-        'Progettiamo soluzioni in cartongesso per ridisegnare gli spazi: velette con LED integrati, pareti divisorie acustiche e interventi mirati di isolamento termico interno (cappotto) per migliorare l’efficienza energetica.',
-    },
-    {
-      title: 'Risanamento Pareti e Trattamenti Antimuffa',
-      description:
-        'Interveniamo su pareti ammalorate da umidità e muffe con cicli di risanamento certificati, garantendo ambienti sani e finiture durature per abitazioni private ed edifici storici.',
-    },
-    {
       title: 'Posa Carta da Parati e Rivestimenti Murali',
       description:
-        'Posa professionale di carte da parati e rivestimenti murali: parati vinilici lavabili, fibre naturali ed elementi tecnici per bagni e cucine. Applicazione precisa con giunti invisibili e grande attenzione alla simmetria dei decori.',
+        'Posa professionale di carte da parati e rivestimenti murali: parati vinilici lavabili, fibre naturali ed elementi tecnici per qualsiasi ambiente. Applicazione precisa e grande attenzione alla simmetria dei decori.',
     },
     {
       title: 'Trattamento Legno per Interni ed Esterni',
       description:
-        'Trattiamo e proteggiamo il legno con cicli di verniciatura e impregnanti all’acqua ad alta penetrazione per travi a vista, sottotetti, serramenti e recinzioni, proteggendo la fibra da raggi UV, funghi e intemperie.',
+        'Trattiamo e proteggiamo il legno con cicli di impregnanti e vernici all’acqua ad alta penetrazione per travi a vista, sottotetti, serramenti e recinzioni, proteggendo la fibra da raggi UV, funghi e intemperie.',
     },
   ]
 
   const externalServices = [
-    {
-      title: 'Rifacimento Facciate e Pitture in Autopulente',
-      description:
-        'Utilizziamo cicli di pittura autopulente ad alta idrorepellenza che permettono alle pareti di mantenersi pulite nel tempo, con colori vividi che non sbiadiscono e superfici protette dagli agenti atmosferici.',
-    },
-    {
+        {
       title: 'Isolamento Termico a Cappotto',
       description:
         'Realizziamo sistemi di isolamento a cappotto, curando con precisione i punti critici per eliminare i ponti termici, ridurre i consumi energetici e prevenire la formazione di muffe interne.',
@@ -51,6 +46,11 @@ function ServicesSection() {
       title: 'Rivestimenti a Spessore e Finiture Decorative da Esterno',
       description:
         'Applichiamo rivestimenti a spessore e finiture materiche per esterni che garantiscono uniformità cromatica, estetica moderna e una resistenza agli urti superiore alle normali pitture.',
+    },
+    {
+      title: 'Rifacimento Facciate e Pitture in Autopulente',
+      description:
+        'Utilizziamo cicli di pittura autopulente ad alta idrorepellenza che permettono alle pareti di mantenersi pulite nel tempo, con colori vividi e superfici protette dagli agenti atmosferici.',
     },
   ]
 

@@ -32,7 +32,7 @@ function App() {
     },
     {
       title: 'Proposta creativa',
-      description: 'Palette colore e rendering delle finiture.',
+      description: 'Cartelle colore e rendering delle finiture.',
     },
     {
       title: 'Applicazione',

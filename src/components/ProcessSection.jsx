@@ -6,7 +6,7 @@ function ProcessSection({ processSteps }) {
         <h2>Un percorso chiaro, dall' idea alla realizzazione.</h2>
         <p>
           Ogni progetto parte da un ascolto attento delle esigenze e si
-          conclude con un risultato che valorizza l' architettura.
+          conclude con un risultato che valorizza l'architettura.
         </p>
         <div className="stack">
           {processSteps.map((step, index) => (
@@ -23,8 +23,7 @@ function ProcessSection({ processSteps }) {
       <div className="quote-card">
         <h3>Consulenza creativa dedicata</h3>
         <p>
-          Supportiamo studi di architettura, interior designer e clienti
-          privati con soluzioni personalizzate e campioni reali.
+          Ci avvaliamo di studi di architettura, interior designer per creare soluzioni e campioni personalizzati.
         </p>
         <ul>
           <li>Analisi tecnica dei supporti</li>
