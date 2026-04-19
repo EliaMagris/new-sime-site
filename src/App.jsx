@@ -16,9 +16,15 @@ function App() {
     message: '',
   })
 
-  /** Immagini “Come lavoriamo”: cartelle dedicate (solo aggiungere/rimuovere file, nomi ordinati 1,2,3…) */
-  const imagesEsterni = import.meta.glob('./img/lavori-esterni/*.{png,jpg,jpeg,svg}', { eager: true })
-  const imagesInterni = import.meta.glob('./img/lavori-interni/*.{png,jpg,jpeg,svg}', { eager: true })
+  /** Immagini “Come lavoriamo”: una cartella per sezione (file ordinati per nome: 1, 2, 3…) */
+  const imagesEsterni = import.meta.glob('./img/lavori-cartongessi-pitture/*.{png,jpg,jpeg,svg}', { eager: true })
+  const imagesInterni = import.meta.glob('./img/lavori-carteDaParati-decorazioni/*.{png,jpg,jpeg,svg}', { eager: true })
+  const imagesCappottoEsterni = import.meta.glob('./img/lavori-cappotto-esterni/*.{png,jpg,jpeg,svg}', {
+    eager: true,
+  })
+  const imagesPrimaDuranteDopo = import.meta.glob('./img/lavori-prima-durante-dopo/*.{png,jpg,jpeg,svg}', {
+    eager: true,
+  })
 
   const sortImageModules = (ctx) =>
     Object.keys(ctx)
@@ -57,11 +63,11 @@ function App() {
     },
     {
       title: 'Sistemi a cappotto, rivestimenti e pitture esterne',
-      images: sortImageModules(imagesInterni),
+      images: sortImageModules(imagesCappottoEsterni),
     },
     {
       title: 'Prima, durante e dopo',
-      images: sortImageModules(imagesInterni),
+      images: sortImageModules(imagesPrimaDuranteDopo),
     },
   ]
 
