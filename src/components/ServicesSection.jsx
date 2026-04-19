@@ -12,7 +12,7 @@ function ServicesSection() {
     {
       title: 'Decorazioni Materiche e Finiture di Pregio',
       description:
-        'Trasformiamo le tue pareti in opere d’arte con tecniche decorative moderne: dal semplice perlescente agli effetti materici contemporanei.',
+        'Trasformiamo le tue pareti in opere d’arte con tecniche decorative moderne: dal perlescente agli effetti materici contemporanei.',
     },
     {
       title: 'Sistemi in Cartongesso e Isolamento Termico',
@@ -45,7 +45,7 @@ function ServicesSection() {
     {
       title: 'Isolamento Termico a Cappotto',
       description:
-        'Realizziamo sistemi di isolamento a cappotto certificati, curando con precisione i punti critici per eliminare i ponti termici, ridurre i consumi energetici e prevenire la formazione di muffe interne.',
+        'Realizziamo sistemi di isolamento a cappotto, curando con precisione i punti critici per eliminare i ponti termici, ridurre i consumi energetici e prevenire la formazione di muffe interne.',
     },
     {
       title: 'Rivestimenti a Spessore e Finiture Decorative da Esterno',
