@@ -43,7 +43,7 @@ function ServicesSection() {
         'Utilizziamo cicli di pittura autopulente ad alta idrorepellenza che permettono alle pareti di mantenersi pulite nel tempo, con colori vividi che non sbiadiscono e superfici protette dagli agenti atmosferici.',
     },
     {
-      title: 'Isolamento Termico a Cappotto (ETICS)',
+      title: 'Isolamento Termico a Cappotto',
       description:
         'Realizziamo sistemi di isolamento a cappotto certificati, curando con precisione i punti critici per eliminare i ponti termici, ridurre i consumi energetici e prevenire la formazione di muffe interne.',
     },
