@@ -74,9 +74,9 @@ function App() {
   const handleSubmit = async (event) => {
     event.preventDefault()
 
-    const serviceId = 'service_96w2isy'
-    const templateId = 'template_js4sttx'
-    const publicKey = 'AdRnlR0aJ8VLmwV96'
+    const serviceId = 'service_591lptl'
+    const templateId = 'template_5lqalza'
+    const publicKey = 'kGhqM6YbmRchYWRtd'
 
     setFormStatus({ state: 'loading', message: 'Invio in corso...' })
 
