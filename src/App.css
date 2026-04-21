@@ -4,7 +4,6 @@
     radial-gradient(ellipse 130% 100% at 50% -5%, var(--logo-purple-dim), transparent 65%),
     radial-gradient(ellipse 100% 85% at 72% 0%, var(--logo-red-dim), transparent 58%),
     var(--bg-base);
-  background-attachment: fixed;
   color: var(--text-primary);
 }
 
@@ -804,6 +803,8 @@
   background: var(--bg-elevated);
   border: 1px solid var(--border-subtle);
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+  content-visibility: auto;
+  contain-intrinsic-size: auto 360px;
 }
 
 .work-showcase-copy {
@@ -885,6 +886,24 @@
 
 .work-showcase-thumb:hover img {
   transform: scale(1.07);
+}
+
+.work-showcase-thumb-placeholder {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  background: linear-gradient(145deg, #141a24 0%, #0b1120 100%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .work-showcase-thumb img {
+    transition: none;
+  }
+
+  .work-showcase-thumb:hover img {
+    transform: none;
+  }
 }
 
 .work-showcase-more {
