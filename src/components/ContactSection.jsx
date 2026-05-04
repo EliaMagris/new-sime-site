@@ -1,7 +1,22 @@
+import { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 
 function ContactSection({ formRef, formStatus, onSubmit }) {
+  const [validationMessage, setValidationMessage] = useState('')
+
+  const handleSubmit = (event) => {
+    const formEl = formRef?.current ?? event.currentTarget
+    if (!formEl.checkValidity()) {
+      event.preventDefault()
+      setValidationMessage('*Cortesemente compilare tutte le sezioni*')
+      return
+    }
+
+    setValidationMessage('')
+    onSubmit(event)
+  }
+
   return (
     <section className="section contact" id="contatti">
       <div className="contact-info">
@@ -42,7 +57,13 @@ function ContactSection({ formRef, formStatus, onSubmit }) {
           </div>
         </div>
       </div>
-      <form className="form" ref={formRef} onSubmit={onSubmit}>
+      <form
+        className="form"
+        ref={formRef}
+        noValidate
+        onSubmit={handleSubmit}
+        onInput={() => validationMessage && setValidationMessage('')}
+      >
         <div className="form-row">
           <label>
             Nome e cognome
@@ -98,6 +119,7 @@ function ContactSection({ formRef, formStatus, onSubmit }) {
         <button className="btn btn-primary" type="submit" disabled={formStatus.state === 'loading'}>
           {formStatus.state === 'loading' ? 'Invio in corso...' : 'Invia richiesta'}
         </button>
+        {validationMessage ? <p className="form-status error">{validationMessage}</p> : null}
         {formStatus.message ? (
           <p className={`form-status ${formStatus.state}`}>{formStatus.message}</p>
         ) : null}
