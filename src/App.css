@@ -258,6 +258,8 @@
   border: 1px solid var(--border-subtle);
   border-radius: 28px;
   padding: 1.5rem;
+  width: 81%;
+  justify-self: center;
   position: relative;
   overflow: hidden;
 }
@@ -275,7 +277,7 @@
 .hero-image {
   display: block;
   width: 100%;
-  height: calc(350px + 3.8cm);
+  height: calc(350px + 6.8cm);
   border-radius: 22px;
   object-fit: cover;
   object-position: center calc(50% - 1cm);
