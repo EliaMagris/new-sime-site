@@ -262,6 +262,16 @@
   overflow: hidden;
 }
 
+.hero-image-button {
+  display: block;
+  width: 100%;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  border-radius: 22px;
+  cursor: zoom-in;
+}
+
 .hero-image {
   display: block;
   width: 100%;
