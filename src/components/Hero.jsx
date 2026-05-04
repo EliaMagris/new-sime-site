@@ -1,3 +1,5 @@
+import heroPhoto from '../img/foto-1/1.jpg'
+
 function Hero({ stats }) {
   return (
     <section className="hero">
@@ -28,11 +30,16 @@ function Hero({ stats }) {
         </div>
       </div>
       <div className="hero-card">
-        <div className="hero-image" />
+        <img
+          className="hero-image"
+          src={heroPhoto}
+          alt="Dettaglio di finiture e colori per ambienti interni."
+          decoding="async"
+          fetchPriority="high"
+        />
         <div className="hero-card-content">
           <h4>
-            Tonalità calde, neutri sofisticati e tocchi decisi per ambienti
-            che parlano di te.
+          Oltre 35 anni di esperienza nella decorazione d'interni, per ambienti che emozionano al primo sguardo.
           </h4>
         </div>
       </div>

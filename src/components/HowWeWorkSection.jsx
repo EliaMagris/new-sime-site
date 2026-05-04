@@ -42,14 +42,34 @@ function HowWeWorkSection({ showcases }) {
 
   const closeLightbox = useCallback(() => setLightbox(null), [])
 
+  const goLightboxPrev = useCallback(() => {
+    setLightbox((lb) => {
+      if (!lb?.sources?.length) return lb
+      const len = lb.sources.length
+      if (len < 2) return lb
+      return { ...lb, index: (lb.index - 1 + len) % len }
+    })
+  }, [])
+
+  const goLightboxNext = useCallback(() => {
+    setLightbox((lb) => {
+      if (!lb?.sources?.length) return lb
+      const len = lb.sources.length
+      if (len < 2) return lb
+      return { ...lb, index: (lb.index + 1) % len }
+    })
+  }, [])
+
   useEffect(() => {
     if (!lightbox) return undefined
     const onKey = (e) => {
       if (e.key === 'Escape') closeLightbox()
+      if (e.key === 'ArrowLeft') goLightboxPrev()
+      if (e.key === 'ArrowRight') goLightboxNext()
     }
     window.addEventListener('keydown', onKey)
     return () => window.removeEventListener('keydown', onKey)
-  }, [lightbox, closeLightbox])
+  }, [lightbox, closeLightbox, goLightboxPrev, goLightboxNext])
 
   const toggleMore = (key) => {
     setMoreOpen((prev) => ({ ...prev, [key]: !prev[key] }))
@@ -87,9 +107,35 @@ function HowWeWorkSection({ showcases }) {
           >
             ×
           </button>
+          {lightbox.sources.length > 1 && (
+            <>
+              <button
+                type="button"
+                className="gallery-lightbox-prev"
+                aria-label="Immagine precedente"
+                onClick={(e) => {
+                  e.stopPropagation()
+                  goLightboxPrev()
+                }}
+              >
+                ‹
+              </button>
+              <button
+                type="button"
+                className="gallery-lightbox-next"
+                aria-label="Immagine successiva"
+                onClick={(e) => {
+                  e.stopPropagation()
+                  goLightboxNext()
+                }}
+              >
+                ›
+              </button>
+            </>
+          )}
           <img
-            src={lightbox.src}
-            alt={lightbox.alt}
+            src={lightbox.sources[lightbox.index]}
+            alt={`${lightbox.title} — immagine ${lightbox.index + 1}`}
             decoding="async"
             onClick={(e) => e.stopPropagation()}
           />
@@ -121,8 +167,9 @@ function ShowcaseArticle({ row, expanded, onToggleMore, onOpenLightbox }) {
               className="work-showcase-thumb"
               onClick={() =>
                 onOpenLightbox({
-                  src,
-                  alt: `${row.title} — immagine ${i + 1}`,
+                  sources: row.images,
+                  index: i,
+                  title: row.title,
                 })
               }
               aria-label={`Ingrandisci: ${row.title}, foto ${i + 1}`}
@@ -154,8 +201,9 @@ function ShowcaseArticle({ row, expanded, onToggleMore, onOpenLightbox }) {
                       className="work-showcase-thumb"
                       onClick={() =>
                         onOpenLightbox({
-                          src,
-                          alt: `${row.title} — immagine ${n}`,
+                          sources: row.images,
+                          index: PREVIEW_COUNT + i,
+                          title: row.title,
                         })
                       }
                       aria-label={`Ingrandisci: ${row.title}, foto ${n}`}
